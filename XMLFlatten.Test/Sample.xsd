@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sample"
+    targetNamespace="http://tempuri.org/Sample.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/Sample.xsd"
+    xmlns:mstns="http://tempuri.org/Sample.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="Person">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name"/>
+        <xs:element name="Pets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pet" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Friend" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

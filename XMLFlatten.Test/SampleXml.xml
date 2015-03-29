@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Person xmlns="http://tempuri.org/Sample.xsd"
+         Id="001">
+  <Name>Bob</Name>
+  <Pets>
+    <Pet>Tom</Pet>
+    <Pet>Jerry</Pet>
+  </Pets>
+  <Friend>Jimmy</Friend>
+</Person>
